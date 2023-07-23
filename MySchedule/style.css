@@ -1,0 +1,27 @@
+table{
+    border: 10px outset rgb(155, 155, 155);
+    border-collapse: collapse;
+    font-size: 1em;
+    width: 80%;
+    margin: 100px 0px 0px 160px;
+}
+table th, table td{
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+    opacity: .8;
+}
+body{
+    background-image: url(water.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+th{
+    background-color: aliceblue;
+}
+td{
+    background-color: azure;
+}
+h1{
+    background-color: bisque;
+}
