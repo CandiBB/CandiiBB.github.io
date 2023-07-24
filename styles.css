@@ -6,12 +6,28 @@ body{
 p{
     font-size: large;
 }
+.grid-container{
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+  }
+.intro{
+grid-row-start: 1;
+grid-row-end: 3;
+}
+.course{
+grid-row-start: 2;
+grid-row-end: 2;
+}
+.con{
 
+}
 .heading{
     box-shadow: 5px 5px 25px 8px grey;
     padding: 25px;
+    display: grid;
 }
 table {
+    
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -27,6 +43,8 @@ table {
     background-color: #dddddd;
   }
   input[type=text], input[type=email], textarea, select {
+    display: grid;
+    grid-template-rows: auto;
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -37,18 +55,19 @@ table {
   }
   
   input[type=submit] {
+    display: grid;
+    grid-template-rows: auto;
     width: 100%;
-    background-color: #4CAF50;
+    background-color:blue;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: blue;
   }
   
   div {
@@ -59,4 +78,13 @@ table {
   .intro{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  footer{
+    text-align: center;
+  }
+  @media screen and (max-width:600px) {
+    .grid-container{
+        display: block;
+    }
   }
